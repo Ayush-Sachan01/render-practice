@@ -1,6 +1,8 @@
 docker run \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/work \
+    -v /home/ayush_sachan/fullstackOpen/fullstackopen-submissions/part2/practice:/work/practice \
+    -v /home/ayush_sachan/fullstackOpen/part3_practice:/work/part3_practice \
     -w /work \
     -it \
     -p 3001:3001 \
